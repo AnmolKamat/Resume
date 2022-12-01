@@ -1,0 +1,231 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+\overfullrule=0pt
+\usepackage[colorlinks=false,draft=false]{hyperref}
+
+\usepackage{xcolor}
+% \usepackage{verbatim}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+\definecolor{blue}{HTML}{005cc5}
+\definecolor{lightblue}{HTML}{126180}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\renewcommand\fbox{\fcolorbox{red}{white}}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.4in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\Large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheadingBold}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{\small#1} & \textbf{}{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textit{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\begin{center}
+    {\Huge \scshape \textcolor{blue}{Anmol R Kamath}} \\ \vspace{1pt}
+    Sagar, Karnataka \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ +91 7892539801 ~ \href{mailto:x@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{anmolrk096322@gmail.com}} ~ 
+    \href{https://linkedin.com/in//}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/anmolkamath/}}  ~
+    \href{https://github.com/}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/AnmolKamat}}
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{\textcolor{blue}{Education}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Sri Ramakrishna Vidyalaya}{2016 -- 2017}
+      {Secondary School Leaving Certificate}{Sagar, Karnataka}
+  \resumeSubHeadingListEnd
+
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {MES PU college}{2018 -- 2019}
+      {Pre-University Course}{Sirsi, Karnataka}
+  \resumeSubHeadingListEnd
+
+    \resumeSubHeadingListStart
+    \resumeSubheading
+      {Canara Engineering College}{2019 -- 2023}
+      {Bachelor of Engineering in Computer Science}{Mangaluru, Karnataka}
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{\Large \textcolor{blue}{Projects}}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Simon Game} \href{https://github.com/AnmolKamat/Simon-Game}{\textbf{\textcolor{gray}{GitHub}}}
+          \href{https://anmolkamat.github.io/Simon-Game/}{\textbf{\textcolor{lightblue}{Live Project}}}}{}
+          \resumeItemListStart
+            \resumeItem{Developed using\textbf{HTML,CSS,JS} .}
+            \resumeItem{Used Javascript for Game Mechanics}
+            \resumeItem{This Game is a memory game which has four colors the game will blink a random color every level and the user have to click them in sequence}
+          \resumeItemListEnd
+
+          \vspace{-10pt}
+          \resumeProjectHeading
+          {\textbf{Hisaab Kitaab}   \href{https://github.com/AnmolKamat/hiasab_Kitaab}{\textbf{\textcolor{gray}{GitHub}}}
+           \href{}{\textbf{\textcolor{lightblue}{}}}}{}
+          \resumeItemListStart
+            \resumeItem{This is Android application for expense management}
+            \resumeItem{This was made using Android Studio and Firebase is used Database}
+            \vspace{+8pt}
+          \resumeItemListEnd
+          
+              \vspace{-20pt}
+          \resumeProjectHeading
+              {\textbf{Ebook Management System} \href{https://github.com/AnmolKamat/ebook}{\textbf{\textcolor{gray}{GitHub}}}
+               {\textbf{\textcolor{lightblue}{}}}}{}
+              \resumeItemListStart
+                \resumeItem{Developed using \textbf{HTML,CSS,PHP} and mySQL}
+                \resumeItem{Which is a online store for ebooks}
+                \resumeItem{A DBMS mini project using PHP for backend}
+              \resumeItemListEnd           
+              \resumeSubHeadingListEnd
+
+            \vspace{-20pt}
+          \resumeProjectHeading
+              {\textbf{Torrent Scrapper} \href{https://github.com/AnmolKamat/Torrent-Scrapper}{\textbf{\textcolor{gray}{GitHub}}}
+               {\textbf{\textcolor{lightblue}{}}}}{}
+              \resumeItemListStart
+                \resumeItem{Developed using \textbf{Python} and Python's Selenium library}
+                \resumeItem{Which is web Scrapper for finding games,movies,applications in Terminal}
+              \resumeItemListEnd           
+              \resumeSubHeadingListEnd
+        
+        %-----------PROGRAMMING SKILLS-----------
+        \section{\textcolor{blue}{Technical Skills}}
+            \vspace{2pt}
+        \begin{itemize}[leftmargin=0.0in, label={}]
+              \normalsize{\item{
+              \textbf{Languages}{: JavaScript, HTML/CSS, C, C++, SQL, Python, LaTeX, Java, Bash, JQuery, PHP} \\
+        	 \vspace{4pt}
+              \textbf{Developer Tools}{: VS Code, Atom, Android Studio, Git, GitHub, Hyper, Canva} \\
+        	\vspace{4pt}
+              \textbf{Technologies/Frameworks}{: React, Express, Docker, NodeJS, ExpressJS,} \\
+            \vspace{4pt}
+              \
+            }}
+                 %-----------Certificates-----------
+        \section{\textcolor{blue}{Certificates}}
+            \resumeItemListStart
+                \resumeItem{Java Programming certificate in Great Learning}
+                \resumeItem{Python Certificate in hackerRank}
+              \resumeItemListEnd
+                         %-----------Languages-----------
+        \section{\textcolor{blue}{Certificates}}
+            \resumeItemListStart
+                \resumeItem{English}
+                \resumeItem{Kannada}
+                \resumeItem{Hindi}
+                \resumeItem{Konkani}
+
+
+              \resumeItemListEnd
+        \end{itemize}
+    \end{document}
+       
